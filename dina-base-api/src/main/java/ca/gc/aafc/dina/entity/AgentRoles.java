@@ -8,15 +8,17 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.SuperBuilder;
+import lombok.extern.jackson.Jacksonized;
 
 /**
  * Generic representation of an agent with one or multiple roles.
  * The agent must have at least 1 role.
  */
 @Data
-@Builder
+@SuperBuilder
+@Jacksonized
 public class AgentRoles implements Serializable {
   
   @NotNull
