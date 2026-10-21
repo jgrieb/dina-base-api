@@ -8,7 +8,7 @@
   <parent>
     <groupId>io.github.aafc-bicoe</groupId>
     <artifactId>dina-base-parent</artifactId>
-    <version>0.181</version>
+    <version>0.182</version>
   </parent>
 
   <artifactId>dina-base-api</artifactId>
@@ -18,12 +18,10 @@
 
   <properties>
     <jcip-annotations.version>1.0</jcip-annotations.version>
-    <local-javax-jaxb.version>2.3.0.1</local-javax-jaxb.version>
-    <rsql-jpa.version>2.0.2</rsql-jpa.version>
 
     <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
 
-    <javers.version>7.3.8</javers.version>
+    <javers.version>7.9.0</javers.version>
     <mybatis.version>3.0.5</mybatis.version>
     <hypersistence-utils-hibernate-63.version>3.15.4</hypersistence-utils-hibernate-63.version>
 
@@ -100,30 +98,6 @@
       <version>${jcip-annotations.version}</version>
       <scope>provided</scope>
     </dependency>
-    <!-- Required for Java >= 9 -->
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-core</artifactId>
-      <version>${local-javax-jaxb.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-impl</artifactId>
-      <version>${local-javax-jaxb.version}</version>
-    </dependency>
-
-    <!-- RSQL -->
-    <dependency>
-      <groupId>com.github.tennaito</groupId>
-      <artifactId>rsql-jpa</artifactId>
-      <version>${rsql-jpa.version}</version>
-      <exclusions>
-        <exclusion>
-          <groupId>org.eclipse.persistence</groupId>
-          <artifactId>javax.persistence</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
 
     <!-- JaVers auditing -->
     <dependency>
@@ -162,22 +136,22 @@
     <dependency>
       <groupId>io.github.aafc-bicoe</groupId>
       <artifactId>dina-filter</artifactId>
-      <version>0.181</version>
+      <version>0.182</version>
     </dependency>
     <dependency>
       <groupId>io.github.aafc-bicoe</groupId>
       <artifactId>dina-messaging</artifactId>
-      <version>0.181</version>
+      <version>0.182</version>
     </dependency>
     <dependency>
       <groupId>io.github.aafc-bicoe</groupId>
       <artifactId>dina-json</artifactId>
-      <version>0.181</version>
+      <version>0.182</version>
     </dependency>
     <dependency>
       <groupId>io.github.aafc-bicoe</groupId>
       <artifactId>dina-test-support</artifactId>
-      <version>0.181</version>
+      <version>0.182</version>
       <scope>test</scope>
     </dependency>
     <dependency>
